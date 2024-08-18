@@ -57,6 +57,20 @@
       figure > figcaption {
         margin-top: 8px;
       }
+      .sidenote-toggle {
+        color: rgb(168, 0, 0);
+      }
+      label.sidenote-toggle {
+        float: right;
+      }
+      label.sidenote-toggle::after {
+        content: "[show figure]";
+        margin-left: .3rem;
+        font-style: italic;
+      }
+      label.sidenote-toggle:has(+input:checked)::after{
+        content: "[hide figure]";
+      }
     </style>
   </head>
   <body>
@@ -128,7 +142,7 @@
               >Continual learning using dendritic modulations on view-invariant
               feedforward weights</a
             >
-            <label for="sn-cosyne24" class="sidenote-toggle">⊕</label>
+            <label for="sn-cosyne24" class="sidenote-toggle"></label>
             <input type="checkbox" id="sn-cosyne24" class="sidenote-toggle" />
             <section class="sidenote">
               <figure>
@@ -186,7 +200,7 @@
               >NMDA-driven dendritic modulation enables multitask representation
               learning in hierarchical sensory processing pathways</a
             >
-                <label for="sn-pnas23" class="sidenote-toggle">⊕</label>
+                <label for="sn-pnas23" class="sidenote-toggle"></label>
             <input type="checkbox" id="sn-pnas23" class="sidenote-toggle" />
             <section class="sidenote">
               <figure>
@@ -264,7 +278,7 @@
               >Analysis of positional encodings for neural machine
               translation</a
             >
-            <label for="sn-iwslt2019" class="sidenote-toggle">⊕</label>
+            <label for="sn-iwslt2019" class="sidenote-toggle"></label>
             <input type="checkbox" id="sn-iwslt2019" class="sidenote-toggle" />
             <section class="sidenote">
               <figure>
