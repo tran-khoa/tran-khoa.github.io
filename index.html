@@ -151,39 +151,24 @@
             <p>
               The brain can learn continuously without forgetting past skills,
               unlike traditional machine learning models that struggle with
-              continual learning. A common solution is to freeze a pretrained
-              network and train task-specific readouts, but this often leads to
-              suboptimal performance because it assumes the frozen
-              representations are linearly separable under the new task.
+              continual learning.
+              We provide a 'fast and slow learning' paradigm towards solving this problem.
+
             </p>
             <p>
-              Meanwhile, prior work suggests that in biologic brains, dendritic
-              top-down modulations provide a powerful mechanism to solve complex
-              tasks while initial feedforward weights solely extract generic
-              view-invariant features. This view aligns with the ‘neural
-              collapse’ phenomenon from supervised machine learning, as the
-              optimal solution for such algorithms is to be invariant to
-              task-irrelevant features that are potentially relevant for other
-              tasks. Instead, we posit that feature extraction can be learned
-              solely by optimizing the networks to attract representations of
-              smoothly moving visual stimuli, akin to contrastive
-              self-supervised learning methods.
+              First, we observe that standard supervised learning of neural networks
+              leads to a configuration, where the network becomes invariant to task-irrelevant features,
+              i.e. also being invariant to features relevant to previous tasks ('neural collapse').
+              Instead, in a <i>slow learning phase</i>, we posit to first learn feedforward weights to extract general features by proxy of a view-invariance learning objective:
+              The training signal is thereby provided by smoothly moving visual stimuli, suggesting object identity.
+              The machine learning equivalent is contrastive self-supervised learning, where the network is trained
+              to be invariant towards randomly generated distortions (e.g. random crops, flips, etc.).
             </p>
             <p>
-              We propose a continual learner that optimizes the feedforward
-              weights towards view-invariant representations while training
-              task-specific modulations in a supervised manner towards separable
-              class clusters, which we train in a standard task-incremental
-              setting. We show that this simple approach avoids catastrophic
-              forgetting of class clusters, as opposed to training the whole
-              network in a supervised manner, while also outperforming (a)
-              task-specific readout without modulations and (b) frozen
-              feedforward weights. This suggests that (a) top-down modulations
-              are necessary and sufficient to shift the representations towards
-              separable clusters and that (b) the SSL objective learns novel
-              features based on the newly presented objects while maintaining
-              features relevant to previous tasks, without requiring specific
-              synaptic consolidation mechanisms.
+              Yet, a neural collapse configuration in order to readout the class via a linear classifier.
+              Inspired by our previous work, we train task-specific modulations - augmenting the feedfoward computation - towards such a configuration (<i>fast learning</i>).
+              We show that alternating between these two phases allows in a standard continual learning setup does not lead to catastrophic forgetting of task-relevant features,
+              but requires keeping track of drifting class-clusters (readout healing).
             </p>
           </li>
           <li>
@@ -193,13 +178,29 @@
               >NMDA-driven dendritic modulation enables multitask representation
               learning in hierarchical sensory processing pathways</a
             >
+                <label for="sn-pnas23" class="sidenote-toggle">⊕</label>
+            <input type="checkbox" id="sn-pnas23" class="sidenote-toggle" />
+            <span class="sidenote">
+              <figure>
+                <img src="figures/pnas23.png"/>
+              </figure>
+            </span>
             <span class="paper_authors"
               >Willem A. M. Wybo, Matthias C. Tsai, <b>Viet Anh Khoa Tran</b>,
               Bernd Illing, Jakob Jordan, Abigail Morrison, Walter Senn</span
             >
             <span class="paper_venue">
-              Proceedings of the National Academy of Sciences, 120 (32)
+              Proceedings of the National Academy of Sciences
             </span>
+            <p>
+              How does the brain adapt its computation to dynamically changing environments and tasks?
+              We propose that dendritic modulation is a suitable candidate for these requiremets.
+              We show in biophysically realistic simulations that task-solving modulations
+              learned via a Hebbian learning rule modulated by a global error signal can be used to solve multiple tasks.
+              Towards more biologically plausible machine learning,
+              we propose task-modulated contrastive learning (TMCL)
+              as a layer-local, semi-supervised, multi-task learning algorithm.
+            </p>
           </li>
         </ul>
         <h4>Natural Language Processing</h4>
@@ -213,6 +214,14 @@
               Herold, Hermann Ney</span
             >
             <span class="paper_venue"> EMNLP 2022 </span>
+            <p>A simple approach to translate speech from one language to text in another language
+              is to generate a transcript using ASR (automatic speech recognition) model,
+              which is then translated using a separate MT (machine translation) model, i.e. cascaded speech trnslation.
+              We discuss the potential benefits of training these two models jointly.
+              Our investigations highlight that the benefits of such joint training
+              suggested by previous work can be explained away by in-domain fine-tuning
+              both ASR and MT models whilst using the traditional cascaded approach.
+            </p>
           </li>
           <li>
             <a class="paper_title" href="https://arxiv.org/abs/2104.10507"
