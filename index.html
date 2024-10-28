@@ -3,11 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
     <title>Dendritic Learner - Viet Anh Khoa Tran</title>
-    <meta name="description" content="Hi there! I am interested in how the biological brain updates,
+    <meta
+      name="description"
+      content="Hi there! I am interested in how the biological brain updates,
         represents and reasons upon information, and to apply that knowledge to
-        build artificial learning agents (NeuroAI).">
+        build artificial learning agents (NeuroAI)."
+    />
     <link href="css/latex.css" type="text/css" rel="stylesheet" />
     <link rel="icon" href="favicon.svg" sizes="any" type="image/svg+xml" />
     <style>
@@ -65,10 +71,10 @@
       }
       label.sidenote-toggle::after {
         content: "[show figure]";
-        margin-left: .3rem;
+        margin-left: 0.3rem;
         font-style: italic;
       }
-      label.sidenote-toggle:has(+input:checked)::after{
+      label.sidenote-toggle:has(+ input:checked)::after {
         content: "[hide figure]";
       }
     </style>
@@ -173,24 +179,32 @@
             <p>
               The brain can learn continuously without forgetting past skills,
               unlike traditional machine learning models that struggle with
-              continual learning.
-              We provide a 'fast and slow learning' paradigm towards solving this problem.
-
+              continual learning. We provide a 'fast and slow learning' paradigm
+              towards solving this problem.
             </p>
             <p>
-              First, we observe that standard supervised learning of neural networks
-              leads to a configuration, where the network becomes invariant to task-irrelevant features,
-              i.e. also being invariant to features relevant to previous tasks ('neural collapse').
-              Instead, in a <i>slow learning phase</i>, we suggest to first learn feedforward weights to extract general features by proxy of a view-invariance learning objective:
-              The training signal is thereby provided by smoothly moving visual stimuli, suggesting object identity.
-              The machine learning equivalent is contrastive self-supervised learning, where the network is trained
-              to be invariant towards randomly generated distortions (e.g. random crops, flips, etc.).
+              First, we observe that standard supervised learning of neural
+              networks leads to a configuration, where the network becomes
+              invariant to task-irrelevant features, i.e. also being invariant
+              to features relevant to previous tasks ('neural collapse').
+              Instead, in a <i>slow learning phase</i>, we suggest to first
+              learn feedforward weights to extract general features by proxy of
+              a view-invariance learning objective: The training signal is
+              thereby provided by smoothly moving visual stimuli, suggesting
+              object identity. The machine learning equivalent is contrastive
+              self-supervised learning, where the network is trained to be
+              invariant towards randomly generated distortions (e.g. random
+              crops, flips, etc.).
             </p>
             <p>
-              Yet, a neural collapse configuration in order to readout the class via a linear classifier.
-              Inspired by our previous work, we train task-specific modulations - augmenting the feedfoward computation - towards such a configuration (<i>fast learning</i>).
-              We show that alternating between these two phases allows in a standard continual learning setup does not lead to catastrophic forgetting of task-relevant features,
-              but requires keeping track of drifting class-clusters (readout healing).
+              Yet, a neural collapse configuration in order to readout the class
+              via a linear classifier. Inspired by our previous work, we train
+              task-specific modulations - augmenting the feedfoward computation
+              - towards such a configuration (<i>fast learning</i>). We show
+              that alternating between these two phases allows in a standard
+              continual learning setup does not lead to catastrophic forgetting
+              of task-relevant features, but requires keeping track of drifting
+              class-clusters (readout healing).
             </p>
           </li>
           <li>
@@ -200,12 +214,20 @@
               >NMDA-driven dendritic modulation enables multitask representation
               learning in hierarchical sensory processing pathways</a
             >
-                <label for="sn-pnas23" class="sidenote-toggle"></label>
+            <label for="sn-pnas23" class="sidenote-toggle"></label>
             <input type="checkbox" id="sn-pnas23" class="sidenote-toggle" />
             <section class="sidenote">
               <figure>
-                <img src="figures/pnas23.png" alt="Task-Modulated Contrastive Learning (TMCL) is a layer-local learning algorithm, that consolidates learned dendrites-inspired task-modulations into task-agnostic feedforward weights."/>
-                <figcaption>Task-Modulated Contrastive Learning (TMCL) is a layer-local learning algorithm, that consolidates learned dendrites-inspired task-modulations into task-agnostic feedforward weights.</figcaption>
+                <img
+                  src="figures/pnas23.png"
+                  alt="Task-Modulated Contrastive Learning (TMCL) is a layer-local learning algorithm, that consolidates learned dendrites-inspired task-modulations into task-agnostic feedforward weights."
+                />
+                <figcaption>
+                  Task-Modulated Contrastive Learning (TMCL) is a layer-local
+                  learning algorithm, that consolidates learned
+                  dendrites-inspired task-modulations into task-agnostic
+                  feedforward weights.
+                </figcaption>
               </figure>
             </section>
             <span class="paper_authors"
@@ -216,13 +238,15 @@
               Proceedings of the National Academy of Sciences
             </span>
             <p>
-              How does the brain adapt its computation to dynamically changing environments and tasks?
-              We propose that dendritic modulation is a suitable candidate for these requiremets.
-              We show in biophysically realistic simulations that task-solving modulations
-              learned via a Hebbian learning rule modulated by a global error signal can be used to solve multiple tasks.
-              Towards more biologically plausible machine learning,
-              we propose task-modulated contrastive learning (TMCL)
-              as a layer-local, semi-supervised, multi-task learning algorithm.
+              How does the brain adapt its computation to dynamically changing
+              environments and tasks? We propose that dendritic modulation is a
+              suitable candidate for these requiremets. We show in biophysically
+              realistic simulations that task-solving modulations learned via a
+              Hebbian learning rule modulated by a global error signal can be
+              used to solve multiple tasks. Towards more biologically plausible
+              machine learning, we propose task-modulated contrastive learning
+              (TMCL) as a layer-local, semi-supervised, multi-task learning
+              algorithm.
             </p>
           </li>
         </ul>
@@ -237,13 +261,16 @@
               Herold, Hermann Ney</span
             >
             <span class="paper_venue"> EMNLP 2022 </span>
-            <p>A simple approach to translate speech from one language to text in another language
-              is to generate a transcript using ASR (automatic speech recognition) model,
-              which is then translated using a separate MT (machine translation) model, i.e. cascaded speech trnslation.
-              We discuss the potential benefits of training these two models jointly.
-              Our investigations highlight that the benefits of such joint training
-              suggested by previous work can be explained away by in-domain fine-tuning
-              both ASR and MT models whilst using the traditional cascaded approach.
+            <p>
+              A simple approach to translate speech from one language to text in
+              another language is to generate a transcript using ASR (automatic
+              speech recognition) model, which is then translated using a
+              separate MT (machine translation) model, i.e. cascaded speech
+              trnslation. We discuss the potential benefits of training these
+              two models jointly. Our investigations highlight that the benefits
+              of such joint training suggested by previous work can be explained
+              away by in-domain fine-tuning both ASR and MT models whilst using
+              the traditional cascaded approach.
             </p>
           </li>
           <li>
@@ -316,6 +343,16 @@
           <li>
             <a
               class="bold"
+              href="https://github.com/tran-khoa/krunner-zotero"
+            ></a
+            >KRunner Zotero <br />
+            Search through your Zotero papers based on metadata as well as
+            notes, tags, etc., via KDE Plasma's awesome KRunner. Inspired by
+            ZotHero.
+          </li>
+          <li>
+            <a
+              class="bold"
               href="https://github.com/tran-khoa/ANNO1404-Warenrechner-App"
               >ANNO 1404 Supply Chain Calculator </a
             ><br />
@@ -340,7 +377,7 @@
         </ul>
       </article>
     </main>
-    
+
     <footer>
       <p>&copy; 2024 Viet Anh Khoa Tran</p>
     </footer>
