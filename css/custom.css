@@ -309,7 +309,7 @@ body {
 .title-container .title {
     font-weight: 500;
     color: var(--md-light-blue-900);
-    font-size: 2.2rem;
+    font-size: 2.4rem;
 }
 
 .title-container .myname {
@@ -462,11 +462,24 @@ blockquote.tldr:before {
     color: var(--md-grey-700);
 }
 blockquote.tldr {
-    background-color: var(--md-light-blue-50);
     padding: .7em;
-    border-left: 4px solid var(--md-light-blue-400);
+    border-left: 4px solid var(--md-light-blue-900);
     margin: 1em 0;
 }
+
+section.projects a.project-name {
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+section.projects a:hover {
+    color: var(--md-light-blue-600);
+}
+
+section.projects a {
+    color: var(--md-light-blue-900);
+}
+
 
 footer {
     color: var(--md-grey-600);
