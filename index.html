@@ -3,81 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      http-equiv="Content-Security-Policy"
-      content="upgrade-insecure-requests"
-    />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+
     <title>Dendritic Learner - Viet Anh Khoa Tran</title>
-    <meta
-      name="description"
-      content="Hi there! I am interested in how the biological brain updates,
+    <meta name="description" content="Hi there! I am interested in how the biological brain updates,
         represents and reasons upon information, and to apply that knowledge to
-        build artificial learning agents (NeuroAI)."
-    />
+        build artificial learning agents (NeuroAI).">
     <link href="css/latex.css" type="text/css" rel="stylesheet" />
+    <link href="css/custom.css" type="text/css" rel="stylesheet" />
     <link rel="icon" href="favicon.svg" sizes="any" type="image/svg+xml" />
-    <style>
-      a {
-        text-decoration: none;
-      }
-      .bold {
-        font-weight: bold;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
-      ul.articles > li {
-        margin-bottom: 1rem;
-      }
-      p {
-        margin-top: 0;
-      }
-      .social-sep {
-        margin: 0 4px;
-      }
-      .paper_title {
-        font-weight: bold;
-        font-size: 1.2rem;
-        line-height: 1rem;
-      }
-      .paper_authors {
-        display: block;
-        font-style: italic;
-        font-size: 0.8rem;
-      }
-      .paper_venue {
-        display: block;
-        font-size: 1rem;
-      }
-      .paper_venue::before {
-        content: " published at ";
-        color: gray;
-        font-size: 0.8rem;
-      }
-      figure {
-        text-align: center;
-      }
-      figure > img {
-        margin: auto;
-      }
-      figure > figcaption {
-        margin-top: 8px;
-      }
-      .sidenote-toggle {
-        color: rgb(168, 0, 0);
-      }
-      label.sidenote-toggle {
-        float: right;
-      }
-      label.sidenote-toggle::after {
-        content: "[show figure]";
-        margin-left: 0.3rem;
-        font-style: italic;
-      }
-      label.sidenote-toggle:has(+ input:checked)::after {
-        content: "[hide figure]";
-      }
-    </style>
   </head>
   <body>
     <header>
@@ -198,7 +132,7 @@
               crops, flips, etc.).
             </p>
             <p>
-              Yet, a neural collapse configuration in order to readout the class
+              Yet, a neural collapse configuration in order to read out the class
               via a linear classifier. Inspired by our previous work, we train
               task-specific modulations - augmenting the feedfoward computation
               - towards such a configuration (<i>fast learning</i>). We show
@@ -267,7 +201,7 @@
               another language is to generate a transcript using ASR (automatic
               speech recognition) model, which is then translated using a
               separate MT (machine translation) model, i.e. cascaded speech
-              trnslation. We discuss the potential benefits of training these
+              translation. We discuss the potential benefits of training these
               two models jointly. Our investigations highlight that the benefits
               of such joint training suggested by previous work can be explained
               away by in-domain fine-tuning both ASR and MT models whilst using

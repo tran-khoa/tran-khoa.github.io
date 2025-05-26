@@ -102,7 +102,7 @@
 
 :root {
   --body-color: hsl(0, 5%, 10%);
-  --body-bg-color: hsl(210, 20%, 98%);
+  --body-bg-color: #FFFFFF;
   --link-visited: hsl(0, 100%, 33%);
   --link-focus-outline: hsl(220, 90%, 52%);
   --pre-bg-color: hsl(210, 28%, 93%);

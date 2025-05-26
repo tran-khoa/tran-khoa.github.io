@@ -1,0 +1,60 @@
+a {
+    text-decoration: none;
+}
+.bold {
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: underline;
+}
+ul.articles > li {
+    margin-bottom: 1rem;
+}
+p {
+    margin-top: 0;
+}
+.social-sep {
+    margin: 0 4px;
+}
+.paper_title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 1rem;
+}
+.paper_authors {
+    display: block;
+    font-style: italic;
+    font-size: 0.8rem;
+}
+.paper_venue {
+    display: block;
+    font-size: 1rem;
+}
+.paper_venue::before {
+    content: " published at ";
+    color: gray;
+    font-size: 0.8rem;
+}
+figure {
+    text-align: center;
+}
+figure > img {
+    margin: auto;
+}
+figure > figcaption {
+    margin-top: 8px;
+}
+.sidenote-toggle {
+    color: rgb(168, 0, 0);
+}
+label.sidenote-toggle {
+    float: right;
+}
+label.sidenote-toggle::after {
+    content: "[show figure]";
+    margin-left: .3rem;
+    font-style: italic;
+}
+label.sidenote-toggle:has(+input:checked)::after{
+    content: "[hide figure]";
+}
