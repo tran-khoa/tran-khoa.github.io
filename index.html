@@ -131,7 +131,18 @@
                         />
 
                         <figcaption>
-                            TODO
+                            Cortical learning (left) is characterized by the interplay between top-down (orange) and feedforward (blue) processing, where top-down connections impart high-level
+                            information on the feedforward sensory processing pathway (top). The feedforward
+                            pathway, on the other hand, learns to predict neural representations of future inputs
+                            (predictive coding). Translating this view to a machine learning algorithm (middle), we
+                            (i) train modulations to implement high-level object identification tasks as the analogue
+                            of top-down inputs, while we (ii) train for view invariance over modulated representations and for
+                            modulation invariance as the analogue of predictive coding (top). As a consequence,
+                            high-level information continually permeates into the sensory processing pathway,
+                            which can be contrasted with the traditional machine learning (right) approach of
+                            unsupervised pretraining for view invariance (top) followed by supervised fine-tuning
+                            (bottom). In this case, it is unclear how high-level information can be incorporated into
+                            the sensory processing pathway to improve subsequent learning.
                         </figcaption>
                     </figure>
 
@@ -149,7 +160,32 @@
                         </p>
                     </blockquote>
                     <p>
-                        TODO
+                        Biological brains learn continually from a stream of unlabeled data, while integrating
+                        specialized information from sparsely labeled examples without compromising their ability to
+                        generalize.
+                        Meanwhile, machine learning methods are susceptible to catastrophic forgetting in this natural
+                        learning setting, as supervised specialist fine-tuning degrades performance on the original
+                        task.
+                    </p>
+                    <p>
+                        We introduce <mark>task-modulated contrastive learning (TMCL)</mark>, which takes inspiration from the
+                        biophysical machinery in the neocortex, using predictive coding principles to integrate top-down
+                        information continually and without supervision.
+                        We follow the idea that these principles build a view-invariant representation space, and that
+                        this can be implemented using a contrastive loss.
+                        Then, whenever labeled samples of a new class occur, new affine modulations are learned that
+                        improve separation of the new class from all others, without affecting feedforward weights.
+                        By co-opting the view-invariance learning mechanism, we then train feedforward weights to match
+                        the unmodulated representation of a data sample to its modulated counterparts.
+                        This introduces modulation invariance into the representation space, and, by also using past
+                        modulations, stabilizes it.
+                    </p>
+                    <p>
+                        Our experiments show improvements in both class-incremental and transfer learning over
+                        state-of-the-art unsupervised approaches, as well as over comparable supervised approaches,
+                        using as few as 1% of available labels.
+                        Taken together, our work suggests that top-down modulations play a crucial role in balancing
+                        stability and plasticity.
                     </p>
 
                 </div>
