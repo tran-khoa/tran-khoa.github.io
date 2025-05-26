@@ -9,308 +9,329 @@
     <meta name="description" content="Hi there! I am interested in how the biological brain updates,
         represents and reasons upon information, and to apply that knowledge to
         build artificial learning agents (NeuroAI).">
-    <link href="css/latex.css" type="text/css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/material-colors.min.css" />
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    >
     <link href="css/custom.css" type="text/css" rel="stylesheet" />
     <link rel="icon" href="favicon.svg" sizes="any" type="image/svg+xml" />
   </head>
   <body>
-    <header>
-      <h1>Dendritic Learner</h1>
-      <p class="author">
-        Viet Anh Khoa Tran <br />
+  <header class="container-fluid">
+    <h1 class="title">Dendritic Learner</h1>
+    <span class="myname">Viet Anh Khoa Tran</span>
+    <p class="subtitle">
 
-        <a
-          class="social"
-          href="https://scholar.google.com/citations?user=f0rAWkYAAAAJ&hl=en"
+
+      <span class="socials">
+          <span class="social-sep"></span>
+          <a
+                  class="social"
+                  href="https://scholar.google.com/citations?user=f0rAWkYAAAAJ&hl=en"
           ><i class="fa-brands fa-google-scholar"></i> Google Scholar</a
-        >
-        <span class="social-sep"></span>
-        <a class="social" href="https://www.linkedin.com/in/viet-anh-khoa-tran/"
+          >
+          <span class="social-sep"></span>
+          <a class="social" href="https://www.linkedin.com/in/viet-anh-khoa-tran/"
           ><i class="fa-brands fa-linkedin"></i> LinkedIn</a
-        >
-        <span class="social-sep"></span>
-        <a class="social" href="https://github.com/tran-khoa"
+          >
+          <span class="social-sep"></span>
+          <a class="social" href="https://github.com/tran-khoa"
           ><i class="fa-brands fa-github"></i> GitHub</a
-        >
-        <span class="social-sep"></span>
-        <a class="social" href="https://bsky.app/profile/ktran.de"
+          >
+          <span class="social-sep"></span>
+          <a class="social" href="https://bsky.app/profile/ktran.de"
           ><i class="fa-brands fa-bluesky"></i> BlueSky</a
-        >
-        <span class="social-sep"></span>
-        <a class="social" href="assets/cv.pdf"
+          >
+          <span class="social-sep"></span>
+          <a class="social" href="assets/cv.pdf"
           ><i class="fa-solid fa-bars-staggered"></i> CV</a
-        >
-      </p>
-    </header>
+          >
+        </span>
+    </p>
 
-    <div class="abstract">
-      <h2>Abstract</h2>
-      <p>
-        Hi there! I am interested in how the biological brain updates,
-        represents and reasons upon information, and to apply that knowledge to
-        build artificial learning agents (<a
-          href="https://www.nature.com/articles/s41467-023-37180-x"
-          >NeuroAI</a
-        >). My goal is to engineer machine learning algorithms and architectures
-        that learn efficiently on neuromorphic hardware and reason beyond chains
-        of thoughts hidden in massive language data. Currently, I am privileged
-        to be able to work towards that goal as a PhD student at the
-        <a href="https://www.fz-juelich.de/en/pgi/pgi-15/research/dlg"
-          >Dendritic Learning Group</a
-        >
-        headed by
-        <a href="https://www.linkedin.com/in/willem-wybo-a2b53217b"
-          >Willem Wybo</a
-        >
-        as part of
-        <a href="https://www.fz-juelich.de/en/pgi/pgi-15">Emre Neftci's Lab</a>
-        at Forschungszentrum Jülich, Germany.
-      </p>
-      <p>
-        Apart from work, I enjoy playing classical piano, table tennis,
-        volleyball, bouldering, video games, and engaging myself in politics,
-        philosophy, and languages.
-      </p>
-    </div>
-
+  </header>
     <main>
-      <article>
-        <h2>Publications</h2>
-        <h3>NeuroAI</h3>
-        <ul class="articles">
-          <li>
-            <a class="paper_title" href="assets/cosyne24_poster.pdf"
-              >Continual learning using dendritic modulations on view-invariant
-              feedforward weights</a
+      <section class="abstract">
+        <div class="container-fluid">
+          <p>
+            Hi there! I am interested in how the biological brain updates,
+            represents and reasons upon information, and to apply that knowledge to
+            build artificial learning agents (<a
+                  href="https://www.nature.com/articles/s41467-023-37180-x"
+          >NeuroAI</a
+          >). My goal is to engineer machine learning algorithms and architectures
+            that learn efficiently on neuromorphic hardware and reason beyond chains
+            of thoughts hidden in massive language data. Currently, I am privileged
+            to be able to work towards that goal as a PhD student at the
+            <a href="https://www.fz-juelich.de/en/pgi/pgi-15/research/dlg"
+            >Dendritic Learning Group</a
             >
-            <label for="sn-cosyne24" class="sidenote-toggle"></label>
-            <input type="checkbox" id="sn-cosyne24" class="sidenote-toggle" />
-            <section class="sidenote">
-              <figure>
-                <img
-                  src="figures/cosyne24.svg"
-                  alt="Training the whole network to solve a classification task
-                  leads to neural collapse, hindering continual learning (left).
-                  Instead, we suggest a separate self-supervised training
-                  objective to learn view-invariant features (right), upon which
-                  task-specific modulations might induce linearly separable
-                  representations."
-                />
-                <figcaption>
-                  Training the whole network to solve a classification task
-                  leads to neural collapse, hindering continual learning (left).
-                  Instead, we suggest a separate self-supervised training
-                  objective to learn view-invariant features (right), upon which
-                  task-specific modulations might induce linearly separable
-                  representations.
-                </figcaption>
-              </figure>
-            </section>
-            <span class="paper_authors"
-              ><b>Viet Anh Khoa Tran</b>, Willem A. M. Wybo, Emre O.
-              Neftci</span
+            headed by
+            <a href="https://www.linkedin.com/in/willem-wybo-a2b53217b"
+            >Willem Wybo</a
             >
-            <span class="paper_venue"> COSYNE 2024 </span>
-            <p>
-              The brain can learn continuously without forgetting past skills,
-              unlike traditional machine learning models that struggle with
-              continual learning. We provide a 'fast and slow learning' paradigm
-              towards solving this problem.
-            </p>
-            <p>
-              First, we observe that standard supervised learning of neural
-              networks leads to a configuration, where the network becomes
-              invariant to task-irrelevant features, i.e. also being invariant
-              to features relevant to previous tasks ('neural collapse').
-              Instead, in a <i>slow learning phase</i>, we suggest to first
-              learn feedforward weights to extract general features by proxy of
-              a view-invariance learning objective: The training signal is
-              thereby provided by smoothly moving visual stimuli, suggesting
-              object identity. The machine learning equivalent is contrastive
-              self-supervised learning, where the network is trained to be
-              invariant towards randomly generated distortions (e.g. random
-              crops, flips, etc.).
-            </p>
-            <p>
-              Yet, a neural collapse configuration in order to read out the class
-              via a linear classifier. Inspired by our previous work, we train
-              task-specific modulations - augmenting the feedfoward computation
-              - towards such a configuration (<i>fast learning</i>). We show
-              that alternating between these two phases allows in a standard
-              continual learning setup does not lead to catastrophic forgetting
-              of task-relevant features, but requires keeping track of drifting
-              class-clusters (readout healing).
-            </p>
-          </li>
-          <li>
-            <a
-              class="paper_title"
-              href="https://www.pnas.org/doi/full/10.1073/pnas.2300558120"
-              >NMDA-driven dendritic modulation enables multitask representation
-              learning in hierarchical sensory processing pathways</a
-            >
-            <label for="sn-pnas23" class="sidenote-toggle"></label>
-            <input type="checkbox" id="sn-pnas23" class="sidenote-toggle" />
-            <section class="sidenote">
-              <figure>
-                <img
-                  src="figures/pnas23.png"
-                  alt="Task-Modulated Contrastive Learning (TMCL) is a layer-local learning algorithm, that consolidates learned dendrites-inspired task-modulations into task-agnostic feedforward weights."
-                />
-                <figcaption>
-                  Task-Modulated Contrastive Learning (TMCL) is a layer-local
-                  learning algorithm, that consolidates learned
-                  dendrites-inspired task-modulations into task-agnostic
-                  feedforward weights.
-                </figcaption>
-              </figure>
-            </section>
-            <span class="paper_authors"
-              >Willem A. M. Wybo, Matthias C. Tsai, <b>Viet Anh Khoa Tran</b>,
-              Bernd Illing, Jakob Jordan, Abigail Morrison, Walter Senn</span
-            >
-            <span class="paper_venue">
-              Proceedings of the National Academy of Sciences
-            </span>
-            <p>
-              How does the brain adapt its computation to dynamically changing
-              environments and tasks? We propose that dendritic modulation is a
-              suitable candidate for these requiremets. We show in biophysically
-              realistic simulations that task-solving modulations learned via a
-              Hebbian learning rule modulated by a global error signal can be
-              used to solve multiple tasks. Towards more biologically plausible
-              machine learning, we propose task-modulated contrastive learning
-              (TMCL) as a layer-local, semi-supervised, multi-task learning
-              algorithm.
-            </p>
-          </li>
-        </ul>
-        <h3>Natural Language Processing</h3>
-        <ul class="articles">
-          <li>
-            <a class="paper_title" href="https://arxiv.org/abs/2210.13700"
-              >Does Joint Training Really Help Cascaded Speech Translation?</a
-            >
-            <span class="paper_authors"
-              ><b>Viet Anh Khoa Tran</b>, David Thulke, Yingbo Gao, Christian
-              Herold, Hermann Ney</span
-            >
-            <span class="paper_venue"> EMNLP 2022 </span>
-            <p>
-              A simple approach to translate speech from one language to text in
-              another language is to generate a transcript using ASR (automatic
-              speech recognition) model, which is then translated using a
-              separate MT (machine translation) model, i.e. cascaded speech
-              translation. We discuss the potential benefits of training these
-              two models jointly. Our investigations highlight that the benefits
-              of such joint training suggested by previous work can be explained
-              away by in-domain fine-tuning both ASR and MT models whilst using
-              the traditional cascaded approach.
-            </p>
-          </li>
-          <li>
-            <a class="paper_title" href="https://arxiv.org/abs/2104.10507"
-              >On Sampling-Based Training Criteria for Neural Language
-              Modeling</a
-            >
-            <span class="paper_authors">
-              Yingbo Gao, David Thulke, Alexander Gerstenberger,
-              <b>Viet Anh Khoa Tran</b>, Ralf Schlüter, Hermann Ney
-            </span>
-            <span class="paper_venue"> INTERSPEECH 2021 </span>
-            <p>
-              As the vocabulary size of language models increases, training the
-              cross-entropy loss across the entire vocabulary becomes
-              computationally expensive. However, it is unclear why certain
-              sampling-based training criteria such as noise contrastive
-              estimation (NCE) work well in practice compared to others. Here,
-              starting from three fundamental criteria, namely mean squared
-              error (MSE), binary cross-entropy (BCE), and cross-entropy (CE),
-              we explicitly write out sampling-based versions such as importance
-              sampling, NCE and standard Monte Carlo sampling and derive a
-              'correction term' that - if applied during inference - makes the
-              sampling-based training criteria perform similarly to NCE.
-            </p>
-          </li>
+            as part of
+            <a href="https://www.fz-juelich.de/en/pgi/pgi-15">Emre Neftci's Lab</a>
+            at Forschungszentrum Jülich, Germany.
+          </p>
+          <p>
+            Apart from work, I enjoy playing classical piano, table tennis,
+            volleyball, bouldering, video games, and engaging myself in politics,
+            philosophy, and languages.
+          </p>
+        </div>
 
-          <li>
-            <a
-              class="paper_title"
-              href="https://aclanthology.org/2019.iwslt-1.20/"
-              >Analysis of positional encodings for neural machine
-              translation</a
-            >
-            <label for="sn-iwslt2019" class="sidenote-toggle"></label>
-            <input type="checkbox" id="sn-iwslt2019" class="sidenote-toggle" />
-            <section class="sidenote">
-              <figure>
-                <img
-                  width="250"
-                  src="figures/iwslt2019.svg"
-                  alt="Relative Positional Encoding as proposed by Shaw et al., 2019"
-                />
-                <figcaption>
-                  Relative positional encodings as proposed by Shaw et al., 2019
-                </figcaption>
-              </figure>
-            </section>
-            <span class="paper_authors">
-              Jan Rosendahl, <b>Viet Anh Khoa Tran,</b> Weiyue Wang, Hermann Ney
-            </span>
-            <span class="paper_venue"> IWSLT 2019 </span>
-            <p>
-              We show in the context of machine translation that while relative
-              positional encodings are not beneficial for performance on
-              sequence lengths seen during training, they are crucial for
-              generalization to longer sequences. Nowadays, this fact is widely
-              acknowledged outside of machine translation (e.g.
-              <a href="https://arxiv.org/abs/2108.12284"
-                >Csordas, Irie and Schmidhuber, 2021</a
-              >) and relative positional encodings are used in many
-              state-of-the-art models.
-            </p>
-          </li>
-        </ul>
-      </article>
-      <article>
-        <h2>Side Projects</h2>
-        <ul>
-          <li>
-            <a class="bold" href="https://github.com/tran-khoa/krunner-zotero"
-              >KRunner Zotero</a
-            >
-            <br />
-            Search through your Zotero papers based on metadata as well as
-            notes, tags, etc., via KDE Plasma's awesome KRunner. Inspired by
-            ZotHero.
-          </li>
-          <li>
-            <a
-              class="bold"
-              href="https://github.com/tran-khoa/ANNO1404-Warenrechner-App"
-              >ANNO 1404 Supply Chain Calculator </a
-            ><br />
-            A high school side project to calculate the optimal supply chain in
-            ANNO 1404 given the current population as an Android app.
-          </li>
-          <li>
-            <a class="bold" href="https://github.com/lebertran/harvestcraft">
-              Porting HarvestCraft to Minecraft 1.9 </a
-            ><br />
-            With 90M downloads,
-            <a
-              href="https://www.curseforge.com/minecraft/mc-mods/pams-harvestcraft"
-              >Pam's HarvestCraft</a
-            >
-            is one of the most popular mods for Minecraft. I ported it to
-            Minecraft 1.9 which
-            <a href="https://www.patreon.com/posts/harvestcraft-1-9-5789042"
-              >made it into the official code</a
-            >. This is the project that started my journey into programming.
-          </li>
-        </ul>
-      </article>
+      </section>
     </main>
+
+
+
+
+
+<!--    <main>-->
+<!--      <article>-->
+<!--        <h2>Publications</h2>-->
+<!--        <h3>NeuroAI</h3>-->
+<!--        <ul class="articles">-->
+<!--          <li>-->
+<!--            <a class="paper_title" href="assets/cosyne24_poster.pdf"-->
+<!--              >Continual learning using dendritic modulations on view-invariant-->
+<!--              feedforward weights</a-->
+<!--            >-->
+<!--            <label for="sn-cosyne24" class="sidenote-toggle"></label>-->
+<!--            <input type="checkbox" id="sn-cosyne24" class="sidenote-toggle" />-->
+<!--            <section class="sidenote">-->
+<!--              <figure>-->
+<!--                <img-->
+<!--                  src="figures/cosyne24.svg"-->
+<!--                  alt="Training the whole network to solve a classification task-->
+<!--                  leads to neural collapse, hindering continual learning (left).-->
+<!--                  Instead, we suggest a separate self-supervised training-->
+<!--                  objective to learn view-invariant features (right), upon which-->
+<!--                  task-specific modulations might induce linearly separable-->
+<!--                  representations."-->
+<!--                />-->
+<!--                <figcaption>-->
+<!--                  Training the whole network to solve a classification task-->
+<!--                  leads to neural collapse, hindering continual learning (left).-->
+<!--                  Instead, we suggest a separate self-supervised training-->
+<!--                  objective to learn view-invariant features (right), upon which-->
+<!--                  task-specific modulations might induce linearly separable-->
+<!--                  representations.-->
+<!--                </figcaption>-->
+<!--              </figure>-->
+<!--            </section>-->
+<!--            <span class="paper_authors"-->
+<!--              ><b>Viet Anh Khoa Tran</b>, Willem A. M. Wybo, Emre O.-->
+<!--              Neftci</span-->
+<!--            >-->
+<!--            <span class="paper_venue"> COSYNE 2024 </span>-->
+<!--            <p>-->
+<!--              The brain can learn continuously without forgetting past skills,-->
+<!--              unlike traditional machine learning models that struggle with-->
+<!--              continual learning. We provide a 'fast and slow learning' paradigm-->
+<!--              towards solving this problem.-->
+<!--            </p>-->
+<!--            <p>-->
+<!--              First, we observe that standard supervised learning of neural-->
+<!--              networks leads to a configuration, where the network becomes-->
+<!--              invariant to task-irrelevant features, i.e. also being invariant-->
+<!--              to features relevant to previous tasks ('neural collapse').-->
+<!--              Instead, in a <i>slow learning phase</i>, we suggest to first-->
+<!--              learn feedforward weights to extract general features by proxy of-->
+<!--              a view-invariance learning objective: The training signal is-->
+<!--              thereby provided by smoothly moving visual stimuli, suggesting-->
+<!--              object identity. The machine learning equivalent is contrastive-->
+<!--              self-supervised learning, where the network is trained to be-->
+<!--              invariant towards randomly generated distortions (e.g. random-->
+<!--              crops, flips, etc.).-->
+<!--            </p>-->
+<!--            <p>-->
+<!--              Yet, a neural collapse configuration in order to read out the class-->
+<!--              via a linear classifier. Inspired by our previous work, we train-->
+<!--              task-specific modulations - augmenting the feedfoward computation-->
+<!--              - towards such a configuration (<i>fast learning</i>). We show-->
+<!--              that alternating between these two phases allows in a standard-->
+<!--              continual learning setup does not lead to catastrophic forgetting-->
+<!--              of task-relevant features, but requires keeping track of drifting-->
+<!--              class-clusters (readout healing).-->
+<!--            </p>-->
+<!--          </li>-->
+<!--          <li>-->
+<!--            <a-->
+<!--              class="paper_title"-->
+<!--              href="https://www.pnas.org/doi/full/10.1073/pnas.2300558120"-->
+<!--              >NMDA-driven dendritic modulation enables multitask representation-->
+<!--              learning in hierarchical sensory processing pathways</a-->
+<!--            >-->
+<!--            <label for="sn-pnas23" class="sidenote-toggle"></label>-->
+<!--            <input type="checkbox" id="sn-pnas23" class="sidenote-toggle" />-->
+<!--            <section class="sidenote">-->
+<!--              <figure>-->
+<!--                <img-->
+<!--                  src="figures/pnas23.png"-->
+<!--                  alt="Task-Modulated Contrastive Learning (TMCL) is a layer-local learning algorithm, that consolidates learned dendrites-inspired task-modulations into task-agnostic feedforward weights."-->
+<!--                />-->
+<!--                <figcaption>-->
+<!--                  Task-Modulated Contrastive Learning (TMCL) is a layer-local-->
+<!--                  learning algorithm, that consolidates learned-->
+<!--                  dendrites-inspired task-modulations into task-agnostic-->
+<!--                  feedforward weights.-->
+<!--                </figcaption>-->
+<!--              </figure>-->
+<!--            </section>-->
+<!--            <span class="paper_authors"-->
+<!--              >Willem A. M. Wybo, Matthias C. Tsai, <b>Viet Anh Khoa Tran</b>,-->
+<!--              Bernd Illing, Jakob Jordan, Abigail Morrison, Walter Senn</span-->
+<!--            >-->
+<!--            <span class="paper_venue">-->
+<!--              Proceedings of the National Academy of Sciences-->
+<!--            </span>-->
+<!--            <p>-->
+<!--              How does the brain adapt its computation to dynamically changing-->
+<!--              environments and tasks? We propose that dendritic modulation is a-->
+<!--              suitable candidate for these requiremets. We show in biophysically-->
+<!--              realistic simulations that task-solving modulations learned via a-->
+<!--              Hebbian learning rule modulated by a global error signal can be-->
+<!--              used to solve multiple tasks. Towards more biologically plausible-->
+<!--              machine learning, we propose task-modulated contrastive learning-->
+<!--              (TMCL) as a layer-local, semi-supervised, multi-task learning-->
+<!--              algorithm.-->
+<!--            </p>-->
+<!--          </li>-->
+<!--        </ul>-->
+<!--        <h3>Natural Language Processing</h3>-->
+<!--        <ul class="articles">-->
+<!--          <li>-->
+<!--            <a class="paper_title" href="https://arxiv.org/abs/2210.13700"-->
+<!--              >Does Joint Training Really Help Cascaded Speech Translation?</a-->
+<!--            >-->
+<!--            <span class="paper_authors"-->
+<!--              ><b>Viet Anh Khoa Tran</b>, David Thulke, Yingbo Gao, Christian-->
+<!--              Herold, Hermann Ney</span-->
+<!--            >-->
+<!--            <span class="paper_venue"> EMNLP 2022 </span>-->
+<!--            <p>-->
+<!--              A simple approach to translate speech from one language to text in-->
+<!--              another language is to generate a transcript using ASR (automatic-->
+<!--              speech recognition) model, which is then translated using a-->
+<!--              separate MT (machine translation) model, i.e. cascaded speech-->
+<!--              translation. We discuss the potential benefits of training these-->
+<!--              two models jointly. Our investigations highlight that the benefits-->
+<!--              of such joint training suggested by previous work can be explained-->
+<!--              away by in-domain fine-tuning both ASR and MT models whilst using-->
+<!--              the traditional cascaded approach.-->
+<!--            </p>-->
+<!--          </li>-->
+<!--          <li>-->
+<!--            <a class="paper_title" href="https://arxiv.org/abs/2104.10507"-->
+<!--              >On Sampling-Based Training Criteria for Neural Language-->
+<!--              Modeling</a-->
+<!--            >-->
+<!--            <span class="paper_authors">-->
+<!--              Yingbo Gao, David Thulke, Alexander Gerstenberger,-->
+<!--              <b>Viet Anh Khoa Tran</b>, Ralf Schlüter, Hermann Ney-->
+<!--            </span>-->
+<!--            <span class="paper_venue"> INTERSPEECH 2021 </span>-->
+<!--            <p>-->
+<!--              As the vocabulary size of language models increases, training the-->
+<!--              cross-entropy loss across the entire vocabulary becomes-->
+<!--              computationally expensive. However, it is unclear why certain-->
+<!--              sampling-based training criteria such as noise contrastive-->
+<!--              estimation (NCE) work well in practice compared to others. Here,-->
+<!--              starting from three fundamental criteria, namely mean squared-->
+<!--              error (MSE), binary cross-entropy (BCE), and cross-entropy (CE),-->
+<!--              we explicitly write out sampling-based versions such as importance-->
+<!--              sampling, NCE and standard Monte Carlo sampling and derive a-->
+<!--              'correction term' that - if applied during inference - makes the-->
+<!--              sampling-based training criteria perform similarly to NCE.-->
+<!--            </p>-->
+<!--          </li>-->
+
+<!--          <li>-->
+<!--            <a-->
+<!--              class="paper_title"-->
+<!--              href="https://aclanthology.org/2019.iwslt-1.20/"-->
+<!--              >Analysis of positional encodings for neural machine-->
+<!--              translation</a-->
+<!--            >-->
+<!--            <label for="sn-iwslt2019" class="sidenote-toggle"></label>-->
+<!--            <input type="checkbox" id="sn-iwslt2019" class="sidenote-toggle" />-->
+<!--            <section class="sidenote">-->
+<!--              <figure>-->
+<!--                <img-->
+<!--                  width="250"-->
+<!--                  src="figures/iwslt2019.svg"-->
+<!--                  alt="Relative Positional Encoding as proposed by Shaw et al., 2019"-->
+<!--                />-->
+<!--                <figcaption>-->
+<!--                  Relative positional encodings as proposed by Shaw et al., 2019-->
+<!--                </figcaption>-->
+<!--              </figure>-->
+<!--            </section>-->
+<!--            <span class="paper_authors">-->
+<!--              Jan Rosendahl, <b>Viet Anh Khoa Tran,</b> Weiyue Wang, Hermann Ney-->
+<!--            </span>-->
+<!--            <span class="paper_venue"> IWSLT 2019 </span>-->
+<!--            <p>-->
+<!--              We show in the context of machine translation that while relative-->
+<!--              positional encodings are not beneficial for performance on-->
+<!--              sequence lengths seen during training, they are crucial for-->
+<!--              generalization to longer sequences. Nowadays, this fact is widely-->
+<!--              acknowledged outside of machine translation (e.g.-->
+<!--              <a href="https://arxiv.org/abs/2108.12284"-->
+<!--                >Csordas, Irie and Schmidhuber, 2021</a-->
+<!--              >) and relative positional encodings are used in many-->
+<!--              state-of-the-art models.-->
+<!--            </p>-->
+<!--          </li>-->
+<!--        </ul>-->
+<!--      </article>-->
+<!--      <article>-->
+<!--        <h2>Side Projects</h2>-->
+<!--        <ul>-->
+<!--          <li>-->
+<!--            <a class="bold" href="https://github.com/tran-khoa/krunner-zotero"-->
+<!--              >KRunner Zotero</a-->
+<!--            >-->
+<!--            <br />-->
+<!--            Search through your Zotero papers based on metadata as well as-->
+<!--            notes, tags, etc., via KDE Plasma's awesome KRunner. Inspired by-->
+<!--            ZotHero.-->
+<!--          </li>-->
+<!--          <li>-->
+<!--            <a-->
+<!--              class="bold"-->
+<!--              href="https://github.com/tran-khoa/ANNO1404-Warenrechner-App"-->
+<!--              >ANNO 1404 Supply Chain Calculator </a-->
+<!--            ><br />-->
+<!--            A high school side project to calculate the optimal supply chain in-->
+<!--            ANNO 1404 given the current population as an Android app.-->
+<!--          </li>-->
+<!--          <li>-->
+<!--            <a class="bold" href="https://github.com/lebertran/harvestcraft">-->
+<!--              Porting HarvestCraft to Minecraft 1.9 </a-->
+<!--            ><br />-->
+<!--            With 90M downloads,-->
+<!--            <a-->
+<!--              href="https://www.curseforge.com/minecraft/mc-mods/pams-harvestcraft"-->
+<!--              >Pam's HarvestCraft</a-->
+<!--            >-->
+<!--            is one of the most popular mods for Minecraft. I ported it to-->
+<!--            Minecraft 1.9 which-->
+<!--            <a href="https://www.patreon.com/posts/harvestcraft-1-9-5789042"-->
+<!--              >made it into the official code</a-->
+<!--            >. This is the project that started my journey into programming.-->
+<!--          </li>-->
+<!--        </ul>-->
+<!--      </article>-->
+<!--    </main>-->
 
     <footer>
       <p>&copy; 2025 Viet Anh Khoa Tran</p>
