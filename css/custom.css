@@ -437,6 +437,10 @@ section.research {
     margin-top: 1em;
 }
 
+.research article p {
+    text-align: justify;
+}
+
 .research figure > img {
     width: 90%;
     margin-left: auto;
