@@ -437,6 +437,10 @@ section.research {
     margin-top: 1em;
 }
 
+.research article blockquote > p {
+    text-align: left;
+}
+
 .research article p {
     text-align: justify;
 }
