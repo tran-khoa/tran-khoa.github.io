@@ -47,3 +47,20 @@ blockquote.tldr {
 #figure1 > h5 {
     padding-bottom: 1em;
 }
+
+h1#title {
+    font-size: 2.25rem !important;
+}
+
+@media (max-width: 450px) {
+    h1#title {
+        font-size: 1.7rem !important;
+    }
+    p.author, p.author > a {
+        font-size: 1rem !important;
+    }
+}
+
+.affiliations img {
+    max-height: 60px;
+}
