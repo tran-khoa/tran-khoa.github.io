@@ -13,6 +13,7 @@ footer {
 header .minor {
     font-size: 0.7em;
     color: #333;
+    font-style: italic;
 }
 
 header h1 {
