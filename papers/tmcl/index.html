@@ -35,38 +35,46 @@
     <header>
       <div class="container">
         <div class="row">
-          <div class="col-lg-9 mx-auto">
-            <h1>
+          <div class="col mx-auto">
+            <h1 id="title" class="text-center fs-4">
               Contrastive&nbsp;Consolidation
               <wbr /><span class="minor">of</span
               >&nbsp;Top&#8209;Down&nbsp;Modulations
               <wbr />
-              <span class="minor">Achieves</span>
-              Sparsely&nbsp;Supervised&nbsp;Continual Learning
+              <span class="minor">Achieves</span>&nbsp;Sparsely&nbsp;Supervised
+              Continual&nbsp;Learning
             </h1>
-            <p class="author text-center">
+            <p class="author text-center lh-lg">
               <a class="btn btn-light" href="https://ktran.de"
                 >Viet Anh Khoa Tran</a
               >
-              <span class="mx-2">•</span>
-              Emre O. Neftci
-              <span class="mx-2">•</span>
-              Willem A. M. Wybo
+              <span class="mx-2">•</span>&nbsp;<a
+                class="btn btn-light"
+                href="https://scholar.google.com/citations?user=yYT6jtkAAAAJ"
+                >Emre O. Neftci</a
+              >
+              <span class="mx-2">•</span>&nbsp;<a
+                class="btn btn-light"
+                href="https://www.fz-juelich.de/en/pgi/pgi-15/research/dlg"
+                >Willem A. M. Wybo</a
+              >
             </p>
 
             <div class="affiliations d-flex justify-content-center">
-              <img
-                height="60px"
-                src="dendlearn.svg"
-                alt="Forschungszentrum Jülich"
-              />
+              <a href="https://www.fz-juelich.de/en/pgi/pgi-15/research/dlg">
+                <img
+                  class="img-fluid"
+                  src="dendlearn.svg"
+                  alt="Forschungszentrum Jülich"
+                />
+              </a>
             </div>
           </div>
         </div>
       </div>
     </header>
 
-    <main class="container row-gap-5 d-grid">
+    <main class="container row-gap-5">
       <section id="figure1" class="row">
         <h5 class="display-6">
           Towards a cortical representation learning algorithm...
@@ -76,12 +84,12 @@
           <img
             src="fig1_web.svg"
             alt="Task-Modulated Contrastive Learning"
-            class="mx-auto d-block"
+            class="mx-auto d-block mb-3"
             width="80%"
           />
-          <figcaption class="col-lg-9 mx-auto container">
-            <div class="row justify-content-between">
-              <div class="col-6">
+          <figcaption class="col-lg-10 mx-auto container d-grid row-gap-3">
+            <div class="row justify-content-between row-gap-3">
+              <div class="col-md-6">
                 <strong>Left:</strong> Cortical learning is characterized by the
                 interplay between top-down (orange) and feedforward (blue)
                 processing, where top-down connections impart high-level
@@ -89,7 +97,7 @@
                 The feedforward pathway, on the other hand, learns to predict
                 neural representations of future inputs (predictive coding).
               </div>
-              <div class="col-6">
+              <div class="col-md-6">
                 <strong>Right:</strong> In contrast, the traditional machine
                 learning approach of unsupervised pretraining for view
                 invariance (top) followed by supervised fine-tuning (bottom). In
@@ -99,7 +107,7 @@
               </div>
             </div>
             <div class="row justify-content-center">
-              <div class="col-6">
+              <div class="col-md-7">
                 <strong>Middle:</strong> Translating this view to a machine
                 learning algorithm, we (i) train modulations to implement
                 high-level object identification tasks as the analogue of
@@ -218,7 +226,7 @@
           </div>
         </div>
       </section>
-      <section id="bibtex">
+      <section id="bibtex" class="row mt-4">
         <h5 class="display-5">BibTeX</h5>
         <pre><code>@misc{tran2025contrastiveconsolidation,
   title={Contrastive Consolidation of Top-Down Modulations Achieves Sparsely Supervised Continual Learning},
@@ -229,7 +237,7 @@
   primaryClass={cs.LG},
 }</code></pre>
       </section>
-      <section id="contact">
+      <section id="contact" class="row mt-4">
         <h5 class="display-7">Correspondence</h5>
         <code>{v.tran, w.wybo} [at] fz-juelich [dot] de</code>
       </section>
