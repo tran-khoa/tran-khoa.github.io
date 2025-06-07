@@ -298,7 +298,7 @@
 }
 
 body {
-    font-family: "IBM Plex Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "IBM Plex Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .title-container {
@@ -314,7 +314,7 @@ body {
 
 .title-container .myname {
     font-weight: 400;
-    color: var(--md-light-blue-800);
+    color: var(--md-grey-900);
     font-size: 1.4rem;
 }
 
