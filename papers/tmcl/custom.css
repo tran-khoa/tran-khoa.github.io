@@ -1,0 +1,40 @@
+body {
+    font-family: "IBM Plex Serif", serif;
+}
+
+header {
+    padding: 60px 0 40px;
+}
+
+header .minor {
+    font-size: 0.7em;
+    color: #333;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: .5em;
+}
+
+p.author {
+    font-size: 1.2rem;
+    margin-bottom: 1.5em;
+}
+
+blockquote.tldr:before {
+    content: "TL;DR";
+    font-weight: 500;
+    font-size: .7em;
+    color: #616161;
+}
+blockquote.tldr {
+    padding: .7em;
+    border-left: 4px solid #01579b;
+    margin: 1em 0;
+}
+
+.hljs-copy {
+    float: right;
+    border-radius: 0 !important;
+    cursor: pointer;
+}
