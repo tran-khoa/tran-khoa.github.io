@@ -1,232 +1,233 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta
-      http-equiv="Content-Security-Policy"
-      content="upgrade-insecure-requests"
+            http-equiv="Content-Security-Policy"
+            content="upgrade-insecure-requests"
     />
 
     <title>
-      Contrastive Consolidation of Top‑Down Modulations Achieves Sparsely
-      Supervised Continual Learning
+        Contrastive Consolidation of Top‑Down Modulations Achieves Sparsely
+        Supervised Continual Learning
     </title>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
-      crossorigin="anonymous"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+            crossorigin="anonymous"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
-      rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+            rel="stylesheet"
     />
     <link
-      rel="stylesheet"
-      href="https://unpkg.com/@highlightjs/cdn-assets@11.11.1/styles/default.min.css"
+            rel="stylesheet"
+            href="https://unpkg.com/@highlightjs/cdn-assets@11.11.1/styles/default.min.css"
     />
 
-    <link rel="stylesheet" href="custom.css" />
-  </head>
-  <body>
-    <header>
-      <div class="container">
+    <link rel="stylesheet" href="custom.css"/>
+</head>
+<body>
+<header>
+    <div class="container">
         <div class="row">
-          <div class="col mx-auto">
-            <h1 id="title" class="text-center fs-4">
-              Contrastive&nbsp;Consolidation
-              <wbr /><span class="minor">of</span
-              >&nbsp;Top&#8209;Down&nbsp;Modulations
-              <wbr />
-              <span class="minor">Achieves</span>&nbsp;Sparsely&nbsp;Supervised
-              Continual&nbsp;Learning
-            </h1>
-            <p class="author text-center lh-lg">
-              <a class="btn btn-light" href="https://ktran.de"
-                >Viet Anh Khoa Tran</a
-              >
-              <span class="mx-2">•</span>&nbsp;<a
-                class="btn btn-light"
-                href="https://scholar.google.com/citations?user=yYT6jtkAAAAJ"
+            <div class="col mx-auto">
+                <h1 id="title" class="text-center fs-4">
+                    Contrastive&nbsp;Consolidation
+                    <wbr/>
+                    <span class="minor">of</span
+                    >&nbsp;Top&#8209;Down&nbsp;Modulations
+                    <wbr/>
+                    <span class="minor">Achieves</span>&nbsp;Sparsely&nbsp;Supervised
+                    Continual&nbsp;Learning
+                </h1>
+                <p class="author text-center lh-lg">
+                    <a class="btn btn-light" href="https://ktran.de"
+                    >Viet Anh Khoa Tran</a
+                    >
+                    <span class="mx-2">•</span>&nbsp;<a
+                        class="btn btn-light"
+                        href="https://scholar.google.com/citations?user=yYT6jtkAAAAJ"
                 >Emre O. Neftci</a
-              >
-              <span class="mx-2">•</span>&nbsp;<a
-                class="btn btn-light"
-                href="https://www.fz-juelich.de/en/pgi/pgi-15/research/dlg"
+                >
+                    <span class="mx-2">•</span>&nbsp;<a
+                        class="btn btn-light"
+                        href="https://www.fz-juelich.de/en/pgi/pgi-15/research/dlg"
                 >Willem A. M. Wybo</a
-              >
-            </p>
+                >
+                </p>
 
-            <div class="affiliations d-flex justify-content-center">
-              <a href="https://www.fz-juelich.de/en/pgi/pgi-15/research/dlg">
-                <img
-                  class="img-fluid"
-                  src="dendlearn.svg"
-                  alt="Forschungszentrum Jülich"
-                />
-              </a>
+                <div class="affiliations d-flex justify-content-center">
+                    <a href="https://www.fz-juelich.de/en/pgi/pgi-15/research/dlg">
+                        <img
+                                class="img-fluid"
+                                src="dendlearn.svg"
+                                alt="Forschungszentrum Jülich"
+                        />
+                    </a>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </header>
+    </div>
+</header>
 
-    <main class="container row-gap-5">
-      <section id="figure1" class="row">
+<main class="container row-gap-5">
+    <section id="figure1" class="row">
         <h5 class="display-6">
-          Towards a cortical representation learning algorithm...
+            A cortical representation learning algorithm...
         </h5>
 
         <figure>
-          <img
-            src="fig1_web.svg"
-            alt="Task-Modulated Contrastive Learning"
-            class="mx-auto d-block mb-3"
-            width="80%"
-          />
-          <figcaption class="col-lg-10 mx-auto container d-grid row-gap-3">
-            <div class="row justify-content-between row-gap-3">
-              <div class="col-md-6">
-                <strong>Left:</strong> Cortical learning is characterized by the
-                interplay between top-down (orange) and feedforward (blue)
-                processing, where top-down connections impart high-level
-                information on the feedforward sensory processing pathway (top).
-                The feedforward pathway, on the other hand, learns to predict
-                neural representations of future inputs (predictive coding).
-              </div>
-              <div class="col-md-6">
-                <strong>Right:</strong> In contrast, the traditional machine
-                learning approach of unsupervised pretraining for view
-                invariance (top) followed by supervised fine-tuning (bottom). In
-                this case, it is unclear how high-level information can be
-                incorporated into the sensory processing pathway to improve
-                subsequent learning.
-              </div>
-            </div>
-            <div class="row justify-content-center">
-              <div class="col-md-7">
-                <strong>Middle:</strong> Translating this view to a machine
-                learning algorithm, we (i) train modulations to implement
-                high-level object identification tasks as the analogue of
-                top-down inputs, while we (ii) train for view invariance over
-                modulated representations and for modulation invariance as the
-                analogue of predictive coding (top). As a consequence,
-                high-level information continually permeates into the sensory
-                processing pathway.
-              </div>
-            </div>
-          </figcaption>
+            <img
+                    src="fig1_web.svg"
+                    alt="Task-Modulated Contrastive Learning"
+                    class="mx-auto d-block mb-3"
+                    width="80%"
+            />
+            <figcaption class="col-lg-10 mx-auto container d-grid row-gap-3">
+                <div class="row justify-content-between row-gap-3">
+                    <div class="col-md-6">
+                        <strong>Left:</strong> Cortical learning is characterized by the
+                        interplay between top-down (orange) and feedforward (blue)
+                        processing, where top-down connections impart high-level
+                        information on the feedforward sensory processing pathway (top).
+                        The feedforward pathway, on the other hand, learns to predict
+                        neural representations of future inputs (predictive coding).
+                    </div>
+                    <div class="col-md-6">
+                        <strong>Right:</strong> In contrast, the traditional machine
+                        learning approach of unsupervised pretraining for view
+                        invariance (top) followed by supervised fine-tuning (bottom). In
+                        this case, it is unclear how high-level information can be
+                        incorporated into the sensory processing pathway to improve
+                        subsequent learning.
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-7">
+                        <strong>Middle:</strong> Translating this view to a machine
+                        learning algorithm, we (i) train modulations to implement
+                        high-level object identification tasks as the analogue of
+                        top-down inputs, while we (ii) train for view invariance over
+                        modulated representations and for modulation invariance as the
+                        analogue of predictive coding (top). As a consequence,
+                        high-level information continually permeates into the sensory
+                        processing pathway.
+                    </div>
+                </div>
+            </figcaption>
         </figure>
 
         <h5 class="display-6">
-          ... for sparsely supervised class-incremental learning
+            ... for sparsely supervised class-incremental learning
         </h5>
         <figure>
-          <img
-            src="fig2_web.svg"
-            alt="Task-Modulated Contrastive Learning"
-            class="mx-auto d-block"
-            width="80%"
-          />
+            <img
+                    src="fig2_web.svg"
+                    alt="Task-Modulated Contrastive Learning"
+                    class="mx-auto d-block"
+                    width="80%"
+            />
         </figure>
-      </section>
-      <section id="abstract" class="row">
+    </section>
+    <section id="abstract" class="row">
         <h5 class="display-5">Abstract</h5>
         <blockquote class="blockquote tldr">
-          <p>
-            Using contrastive learning to integrate class modulations into
-            feedforward weights, continually.
-          </p>
+            <p>
+                Using contrastive learning to integrate class modulations into
+                feedforward weights, continually.
+            </p>
         </blockquote>
         <p>
-          Biological brains learn continually from a stream of unlabeled data,
-          while integrating specialized information from sparsely labeled
-          examples without compromising their ability to generalize. Meanwhile,
-          machine learning methods are susceptible to catastrophic forgetting in
-          this natural learning setting, as supervised specialist fine-tuning
-          degrades performance on the original task.
+            Biological brains learn continually from a stream of unlabeled data,
+            while integrating specialized information from sparsely labeled
+            examples without compromising their ability to generalize. Meanwhile,
+            machine learning methods are susceptible to catastrophic forgetting in
+            this natural learning setting, as supervised specialist fine-tuning
+            degrades performance on the original task.
         </p>
         <p>
-          We introduce
-          <mark>task-modulated contrastive learning (TMCL)</mark>
-          , which takes inspiration from the biophysical machinery in the
-          neocortex, using predictive coding principles to integrate top-down
-          information continually and without supervision. We follow the idea
-          that these principles build a view-invariant representation space, and
-          that this can be implemented using a contrastive loss. Then, whenever
-          labeled samples of a new class occur, new affine modulations are
-          learned that improve separation of the new class from all others,
-          without affecting feedforward weights. By co-opting the
-          view-invariance learning mechanism, we then train feedforward weights
-          to match the unmodulated representation of a data sample to its
-          modulated counterparts. This introduces modulation invariance into the
-          representation space, and, by also using past modulations, stabilizes
-          it.
+            We introduce
+            <mark>task-modulated contrastive learning (TMCL)</mark>
+            , which takes inspiration from the biophysical machinery in the
+            neocortex, using predictive coding principles to integrate top-down
+            information continually and without supervision. We follow the idea
+            that these principles build a view-invariant representation space, and
+            that this can be implemented using a contrastive loss. Then, whenever
+            labeled samples of a new class occur, new affine modulations are
+            learned that improve separation of the new class from all others,
+            without affecting feedforward weights. By co-opting the
+            view-invariance learning mechanism, we then train feedforward weights
+            to match the unmodulated representation of a data sample to its
+            modulated counterparts. This introduces modulation invariance into the
+            representation space, and, by also using past modulations, stabilizes
+            it.
         </p>
         <p>
-          Our experiments show improvements in both class-incremental and
-          transfer learning over state-of-the-art unsupervised approaches, as
-          well as over comparable supervised approaches, using as few as 1% of
-          available labels. Taken together, our work suggests that top-down
-          modulations play a crucial role in balancing stability and plasticity.
+            Our experiments show improvements in both class-incremental and
+            transfer learning over state-of-the-art unsupervised approaches, as
+            well as over comparable supervised approaches, using as few as 1% of
+            available labels. Taken together, our work suggests that top-down
+            modulations play a crucial role in balancing stability and plasticity.
         </p>
-      </section>
-      <section id="resources" class="row">
+    </section>
+    <section id="resources" class="row">
         <h5 class="display-5">Resources</h5>
 
         <div class="col-sm-6 mb-3 mb-sm-0">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title d-flex align-items-center">
-                <img src="arxiv.svg" height="30px" alt="arXiV icon" />
-                &nbsp;Preprint
-              </h5>
-              <p class="card-text">
-                Check out our preprint for further details.
-              </p>
-              <a
-                href="https://arxiv.org/abs/2505.14125"
-                class="btn btn-dark btn-sm stretched-link"
-                >arXiv</a
-              >
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title d-flex align-items-center">
+                        <img src="arxiv.svg" height="30px" alt="arXiV icon"/>
+                        &nbsp;Preprint
+                    </h5>
+                    <p class="card-text">
+                        Check out our preprint for further details.
+                    </p>
+                    <a
+                            href="https://arxiv.org/abs/2505.14125"
+                            class="btn btn-dark btn-sm stretched-link"
+                    >arXiv</a
+                    >
+                </div>
             </div>
-          </div>
         </div>
         <div class="col-sm-6">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title d-flex align-items-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="30"
-                  height="30"
-                  fill="currentColor"
-                  class="bi bi-file-post"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M4 3.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5z"
-                  />
-                  <path
-                    d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1"
-                  />
-                </svg>
-                &nbsp;Poster
-              </h5>
-              <p class="card-text">Current version of our poster.</p>
-              <a
-                href="https://ktran.de/assets/tmcl_poster.pdf"
-                class="btn btn-dark btn-sm stretched-link"
-                >Download</a
-              >
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title d-flex align-items-center">
+                        <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="30"
+                                height="30"
+                                fill="currentColor"
+                                class="bi bi-file-post"
+                                viewBox="0 0 16 16"
+                        >
+                            <path
+                                    d="M4 3.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5z"
+                            />
+                            <path
+                                    d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1"
+                            />
+                        </svg>
+                        &nbsp;Poster
+                    </h5>
+                    <p class="card-text">Current version of our poster.</p>
+                    <a
+                            href="https://ktran.de/assets/tmcl_poster.pdf"
+                            class="btn btn-dark btn-sm stretched-link"
+                    >Download</a
+                    >
+                </div>
             </div>
-          </div>
         </div>
-      </section>
-      <section id="bibtex" class="row mt-4">
+    </section>
+    <section id="bibtex" class="row mt-4">
         <h5 class="display-5">BibTeX</h5>
         <pre><code>@misc{tran2025contrastiveconsolidation,
   title={Contrastive Consolidation of Top-Down Modulations Achieves Sparsely Supervised Continual Learning},
@@ -236,66 +237,66 @@
   archivePrefix={arXiv},
   primaryClass={cs.LG},
 }</code></pre>
-      </section>
-      <section id="contact" class="row mt-4">
+    </section>
+    <section id="contact" class="row mt-4">
         <h5 class="display-7">Correspondence</h5>
         <code>{v.tran, w.wybo} [at] fz-juelich [dot] de</code>
-      </section>
-    </main>
-  </body>
+    </section>
+</main>
+</body>
 
-  <footer></footer>
+<footer></footer>
 
-  <script src="https://unpkg.com/@highlightjs/cdn-assets@11.11.1/highlight.min.js"></script>
-  <script>
+<script src="https://unpkg.com/@highlightjs/cdn-assets@11.11.1/highlight.min.js"></script>
+<script>
     hljs.highlightAll();
-  </script>
-  <script>
+</script>
+<script>
     const snippets = document.getElementsByTagName("pre");
 
     const numberOfSnippets = snippets.length;
 
     for (let i = 0; i < numberOfSnippets; i++) {
-      let code = snippets[i].getElementsByTagName("code")[0].innerText;
-      let copyText =
-        '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">\n' +
-        '  <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z"/>\n' +
-        '  <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z"/>\n' +
-        "</svg> Copy";
+        let code = snippets[i].getElementsByTagName("code")[0].innerText;
+        let copyText =
+            '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">\n' +
+            '  <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z"/>\n' +
+            '  <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z"/>\n' +
+            "</svg> Copy";
 
-      snippets[i].classList.add("hljs"); // append copy button to pre tag
+        snippets[i].classList.add("hljs"); // append copy button to pre tag
 
-      snippets[i].innerHTML =
-        '<button class="btn btn-primary hljs-copy">' +
-        copyText +
-        "</button>" +
-        snippets[i].innerHTML; // append copy button
+        snippets[i].innerHTML =
+            '<button class="btn btn-primary hljs-copy">' +
+            copyText +
+            "</button>" +
+            snippets[i].innerHTML; // append copy button
 
-      snippets[i]
-        .getElementsByClassName("hljs-copy")[0]
-        .addEventListener("click", function () {
-          this.innerText = "Copying..";
+        snippets[i]
+            .getElementsByClassName("hljs-copy")[0]
+            .addEventListener("click", function () {
+                this.innerText = "Copying..";
 
-          if (!navigator.userAgent.toLowerCase().includes("safari")) {
-            navigator.clipboard.writeText(code);
-          } else {
-            prompt("Clipboard (Select: ⌘+a > Copy:⌘+c)", code);
-          }
+                if (!navigator.userAgent.toLowerCase().includes("safari")) {
+                    navigator.clipboard.writeText(code);
+                } else {
+                    prompt("Clipboard (Select: ⌘+a > Copy:⌘+c)", code);
+                }
 
-          this.innerHTML =
-            '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-check-fill" viewBox="0 0 16 16">\n' +
-            '  <path d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5z"/>\n' +
-            '  <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5zm6.854 7.354-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708"/>\n' +
-            "</svg> Copied!";
+                this.innerHTML =
+                    '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-check-fill" viewBox="0 0 16 16">\n' +
+                    '  <path d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5z"/>\n' +
+                    '  <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5zm6.854 7.354-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708"/>\n' +
+                    "</svg> Copied!";
 
-          let button = this;
+                let button = this;
 
-          setTimeout(function () {
-            button.innerHTML = copyText;
-          }, 1000);
-        });
+                setTimeout(function () {
+                    button.innerHTML = copyText;
+                }, 1000);
+            });
     }
-  </script>
+</script>
 
-  <style></style>
+<style></style>
 </html>
