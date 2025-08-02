@@ -499,3 +499,11 @@ footer {
     color: var(--md-grey-600);
     padding: 1em 0;
 }
+
+h2.title {
+    display: inline-block;
+}
+
+h1.myname {
+    display: inline-block;
+}
