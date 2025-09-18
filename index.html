@@ -11,9 +11,7 @@
     <title>Dendritic Learner - Viet Anh Khoa Tran</title>
     <meta
       name="description"
-      content="Hi there! I am interested in how the biological brain updates,
-        represents and reasons upon information, and to apply that knowledge to
-        build artificial learning agents (NeuroAI)."
+      content="I am interested in how the biological brain updates, represents and reasons upon information, and to apply that knowledge to build artificial learning agents (NeuroAI)."
     />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -34,14 +32,21 @@
   </head>
   <body>
     <header class="container title-container">
-      <div class="row align-items-center gap-4">
-        <div class="col">
-          <span class="title">Dendritic Learner</span>
+      <div class="row mb-3">
+        <div class="col-lg-8">
+          <h2 class="title">Dendritic Learner</h2>
           <br />
-          <span class="myname">Viet Anh Khoa Tran <sup>1,2</sup></span>
+          <h1 class="myname">Viet Anh Khoa Tran <sup>1,2</sup></h1>
           <br />
+          <span class="myaffiliations"
+            ><sup>1</sup>Dendritic Learning Group (PGI-15), Forschungszentrum
+            Jülich<br />
+            <sup>2</sup>RWTH Aachen University</span
+          >
         </div>
-        <div class="col-lg-auto socials d-grid gap-2 d-lg-block mx-auto">
+      </div>
+      <div class="row">
+        <div class="col-lg-8 socials d-grid gap-2 d-lg-block">
           <a
             class="social btn btn-primary gscholar"
             href="https://scholar.google.com/citations?user=f0rAWkYAAAAJ&hl=en"
@@ -67,43 +72,43 @@
           >
         </div>
       </div>
-      <span class="myaffiliations d-none d-lg-inline-block"
-        ><sup>1</sup>Dendritic Learning Group (PGI-15), Forschungszentrum Jülich
-        &nbsp;&nbsp;<sup>2</sup>RWTH Aachen University</span
-      >
     </header>
     <main>
       <section class="abstract">
         <div class="container">
-          <p>
-            Hi there! I am interested in how the biological brain updates,
-            represents and reasons upon information, and to apply that knowledge
-            to build artificial learning agents (<a
-              href="https://www.nature.com/articles/s41467-023-37180-x"
-              >NeuroAI</a
-            >). My goal is to engineer machine learning algorithms and
-            architectures that learn efficiently on neuromorphic hardware and
-            reason beyond chains of thoughts hidden in massive language data.
-            Currently, I am privileged to be able to work towards that goal as a
-            PhD student at the
-            <a href="https://www.fz-juelich.de/en/pgi/pgi-15/research/dlg"
-              >Dendritic Learning Group</a
-            >
-            headed by
-            <a href="https://www.linkedin.com/in/willem-wybo-a2b53217b"
-              >Willem Wybo</a
-            >
-            as part of
-            <a href="https://www.fz-juelich.de/en/pgi/pgi-15"
-              >Emre Neftci's Neuromorphic Computing lab</a
-            >
-            at Forschungszentrum Jülich, Germany.
-          </p>
-          <p>
-            Apart from work, I enjoy playing classical piano, table tennis,
-            volleyball, bouldering, video games, and engaging myself in
-            politics, philosophy, and languages.
-          </p>
+          <div class="row">
+            <div class="col-lg-8">
+              <p>
+                Hi there! I am interested in how the biological brain updates,
+                represents and reasons upon information, and to apply that
+                knowledge to build artificial learning agents (<a
+                  href="https://www.nature.com/articles/s41467-023-37180-x"
+                  >NeuroAI</a
+                >). My goal is to engineer machine learning algorithms and
+                architectures that learn efficiently on neuromorphic hardware
+                and reason beyond chains of thoughts hidden in massive language
+                data. Currently, I am privileged to be able to work towards that
+                goal as a PhD student at the
+                <a href="https://www.fz-juelich.de/en/pgi/pgi-15/research/dlg"
+                  >Dendritic Learning Group</a
+                >
+                headed by
+                <a href="https://www.linkedin.com/in/willem-wybo-a2b53217b"
+                  >Willem Wybo</a
+                >
+                as part of
+                <a href="https://www.fz-juelich.de/en/pgi/pgi-15"
+                  >Emre Neftci's Neuromorphic Computing lab</a
+                >
+                at Forschungszentrum Jülich, Germany.
+              </p>
+              <p>
+                Apart from work, I enjoy playing classical piano, table tennis,
+                volleyball, bouldering, video games, and engaging myself in
+                politics, philosophy, and languages.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -124,50 +129,17 @@
 
       <section class="research">
         <article class="container">
-          <h3 class="paper-title">
+          <a class="paper-title h3" href="https://ktran.de/papers/tmcl/">
             Contrastive Consolidation of Top-Down Modulations Achieves Sparsely
             Supervised Continual Learning
-          </h3>
+          </a>
+
           <span class="paper-authors">
             <span class="me-author">Viet Anh Khoa Tran</span>, Emre O. Neftci,
             Willem A. M. Wybo
           </span>
 
-          <div class="row gap-4">
-            <div class="col-md-4">
-              <figure>
-                <img src="figures/tmcl.svg" alt="" />
-
-                <figcaption>
-                  Cortical learning (left) is characterized by the interplay
-                  between top-down (orange) and feedforward (blue) processing,
-                  where top-down connections impart high-level information on
-                  the feedforward sensory processing pathway (top). The
-                  feedforward pathway, on the other hand, learns to predict
-                  neural representations of future inputs (predictive coding).
-                  Translating this view to a machine learning algorithm
-                  (middle), we (i) train modulations to implement high-level
-                  object identification tasks as the analogue of top-down
-                  inputs, while we (ii) train for view invariance over modulated
-                  representations and for modulation invariance as the analogue
-                  of predictive coding (top). As a consequence, high-level
-                  information continually permeates into the sensory processing
-                  pathway, which can be contrasted with the traditional machine
-                  learning (right) approach of unsupervised pretraining for view
-                  invariance (top) followed by supervised fine-tuning (bottom).
-                  In this case, it is unclear how high-level information can be
-                  incorporated into the sensory processing pathway to improve
-                  subsequent learning.
-                </figcaption>
-              </figure>
-
-              <a class="btn btn-secondary" href="assets/tmcl_poster.pdf"
-                ><i class="fa-regular fa-rectangle-list"></i> Poster</a
-              >
-              <a class="btn btn-danger" href="https://arxiv.org/abs/2505.14125">
-                <i class="fa-solid fa-file-lines"></i> Preprint
-              </a>
-            </div>
+          <div class="row">
             <div class="col-md">
               <blockquote class="blockquote tldr">
                 <p>
@@ -211,6 +183,47 @@
                 stability and plasticity.
               </p>
             </div>
+            <div class="col-md-4">
+              <figure>
+                <img src="figures/tmcl.svg" alt="" />
+
+                <figcaption>
+                  Cortical learning (left) is characterized by the interplay
+                  between top-down (orange) and feedforward (blue) processing,
+                  where top-down connections impart high-level information on
+                  the feedforward sensory processing pathway (top). The
+                  feedforward pathway, on the other hand, learns to predict
+                  neural representations of future inputs (predictive coding).
+                  Translating this view to a machine learning algorithm
+                  (middle), we (i) train modulations to implement high-level
+                  object identification tasks as the analogue of top-down
+                  inputs, while we (ii) train for view invariance over modulated
+                  representations and for modulation invariance as the analogue
+                  of predictive coding (top). As a consequence, high-level
+                  information continually permeates into the sensory processing
+                  pathway, which can be contrasted with the traditional machine
+                  learning (right) approach of unsupervised pretraining for view
+                  invariance (top) followed by supervised fine-tuning (bottom).
+                  In this case, it is unclear how high-level information can be
+                  incorporated into the sensory processing pathway to improve
+                  subsequent learning.
+                </figcaption>
+              </figure>
+
+              <div class="paper-actions text-end">
+                <a
+                  class="btn btn-primary btn"
+                  href="https://ktran.de/papers/tmcl/"
+                  ><i class="fa-solid fa-rocket"></i> Project page</a
+                >
+                <a
+                  class="btn btn-danger"
+                  href="https://arxiv.org/abs/2505.14125"
+                >
+                  <i class="fa-solid fa-file-lines"></i> Preprint
+                </a>
+              </div>
+            </div>
           </div>
         </article>
         <article class="container">
@@ -224,28 +237,7 @@
             <span class="venue">COSYNE 2024</span>
           </span>
 
-          <div class="row gap-4">
-            <div class="col-md-4">
-              <figure>
-                <img
-                  src="figures/cosyne24.svg"
-                  alt="Training the whole network to solve a classification task leads to neural collapse, hindering continual learning (left). Instead, we suggest a separate self-supervised training objective to learn view-invariant features (right), upon which task-specific modulations might induce linearly separable representations."
-                />
-
-                <figcaption>
-                  Training the whole network to solve a classification task
-                  leads to neural collapse, hindering continual learning (left).
-                  Instead, we suggest a separate self-supervised training
-                  objective to learn view-invariant features (right), upon which
-                  task-specific modulations might induce linearly separable
-                  representations.
-                </figcaption>
-              </figure>
-
-              <a class="btn btn-secondary" href="assets/cosyne24_poster.pdf"
-                ><i class="fa-regular fa-rectangle-list"></i> Poster</a
-              >
-            </div>
+          <div class="row">
             <div class="col-md">
               <blockquote class="blockquote tldr">
                 <p>
@@ -284,6 +276,29 @@
                 keeping track of drifting class-clusters (readout healing).
               </p>
             </div>
+            <div class="col-md-4">
+              <figure>
+                <img
+                  src="figures/cosyne24.svg"
+                  alt="Training the whole network to solve a classification task leads to neural collapse, hindering continual learning (left). Instead, we suggest a separate self-supervised training objective to learn view-invariant features (right), upon which task-specific modulations might induce linearly separable representations."
+                />
+
+                <figcaption>
+                  Training the whole network to solve a classification task
+                  leads to neural collapse, hindering continual learning (left).
+                  Instead, we suggest a separate self-supervised training
+                  objective to learn view-invariant features (right), upon which
+                  task-specific modulations might induce linearly separable
+                  representations.
+                </figcaption>
+              </figure>
+
+              <div class="paper-actions text-end">
+                <a class="btn btn-secondary" href="assets/cosyne24_poster.pdf"
+                  ><i class="fa-regular fa-rectangle-list"></i> Poster</a
+                >
+              </div>
+            </div>
           </div>
         </article>
         <article class="container">
@@ -297,28 +312,7 @@
             Jakob Jordan, Abigail Morrison, Walter Senn
             <span class="venue">PNAS</span>
           </span>
-
-          <div class="row gap-4">
-            <div class="col-md-4">
-              <figure>
-                <img
-                  src="figures/pnas23.png"
-                  alt="Training the whole network to solve a classification task leads to neural collapse, hindering continual learning (left). Instead, we suggest a separate self-supervised training objective to learn view-invariant features (right), upon which task-specific modulations might induce linearly separable representations."
-                />
-
-                <figcaption>
-                  Task-Modulated Contrastive Learning (TMCL) is a layer-local
-                  learning algorithm, which trains weights to be invariant to
-                  task modulations.
-                </figcaption>
-              </figure>
-
-              <a
-                class="btn btn-danger"
-                href="https://www.pnas.org/doi/full/10.1073/pnas.2300558120"
-                ><i class="fa-regular fa-file-lines"></i> Journal article</a
-              >
-            </div>
+          <div class="row">
             <div class="col-md">
               <p>
                 The brain can learn continuously without forgetting past skills,
@@ -338,6 +332,28 @@
                 semi-supervised, multitask learning algorithm.
               </p>
             </div>
+            <div class="col-md-4">
+              <figure>
+                <img
+                  src="figures/pnas23.png"
+                  alt="Training the whole network to solve a classification task leads to neural collapse, hindering continual learning (left). Instead, we suggest a separate self-supervised training objective to learn view-invariant features (right), upon which task-specific modulations might induce linearly separable representations."
+                />
+
+                <figcaption>
+                  Task-Modulated Contrastive Learning (TMCL) is a layer-local
+                  learning algorithm, which trains weights to be invariant to
+                  task modulations.
+                </figcaption>
+              </figure>
+
+              <div class="paper-actions text-end">
+                <a
+                  class="btn btn-danger"
+                  href="https://www.pnas.org/doi/full/10.1073/pnas.2300558120"
+                  ><i class="fa-regular fa-file-lines"></i> Journal article</a
+                >
+              </div>
+            </div>
           </div>
         </article>
         <article class="container">
@@ -350,7 +366,7 @@
             <span class="venue">EMNLP 2022</span>
           </span>
 
-          <div class="row gap-4">
+          <div class="row">
             <div class="col-md">
               <blockquote class="blockquote tldr">
                 <p>In-domain fine-tuning is all you need.</p>
@@ -366,10 +382,13 @@
                 work can be explained away by in-domain fine-tuning both ASR and
                 MT models whilst using the traditional cascaded approach.
               </p>
-
-              <a class="btn btn-danger" href="https://arxiv.org/abs/2210.13700"
-                ><i class="fa-regular fa-file-lines"></i> Paper</a
-              >
+              <div class="paper-actions text-end">
+                <a
+                  class="btn btn-danger"
+                  href="https://arxiv.org/abs/2210.13700"
+                  ><i class="fa-regular fa-file-lines"></i> Paper</a
+                >
+              </div>
             </div>
           </div>
         </article>
@@ -384,7 +403,7 @@
             <span class="venue">INTERSPEECH 2021</span>
           </span>
 
-          <div class="row gap-4">
+          <div class="row">
             <div class="col-md">
               <blockquote class="blockquote tldr">
                 <p>
@@ -406,10 +425,13 @@
                 makes the sampling-based training criteria perform similarly to
                 NCE.
               </p>
-
-              <a class="btn btn-danger" href="https://arxiv.org/abs/2104.10507"
-                ><i class="fa-regular fa-file-lines"></i> Paper</a
-              >
+              <div class="paper-actions text-end">
+                <a
+                  class="btn btn-danger"
+                  href="https://arxiv.org/abs/2104.10507"
+                  ><i class="fa-regular fa-file-lines"></i> Paper</a
+                >
+              </div>
             </div>
           </div>
         </article>
@@ -422,27 +444,7 @@
             Weiyue Wang, Hermann Ney
             <span class="venue">IWSLT 2019</span>
           </span>
-
-          <div class="row gap-4">
-            <div class="col-md-4">
-              <figure>
-                <img
-                  src="figures/iwslt2019.svg"
-                  alt="Relative positional encodings as proposed by Shaw et al., 2019"
-                />
-
-                <figcaption>
-                  Relative positional encodings as proposed by Shaw et al., 2019
-                </figcaption>
-              </figure>
-
-              <a
-                class="btn btn-danger"
-                href="https://aclanthology.org/2019.iwslt-1.20/"
-              >
-                <i class="fa-solid fa-file-lines"></i> Paper
-              </a>
-            </div>
+          <div class="row">
             <div class="col-md">
               <blockquote class="blockquote tldr">
                 <p>
@@ -461,6 +463,26 @@
                 >) and relative positional encodings are used in many
                 state-of-the-art models.
               </p>
+            </div>
+            <div class="col-md-4">
+              <figure>
+                <img
+                  src="figures/iwslt2019.svg"
+                  alt="Relative positional encodings as proposed by Shaw et al., 2019"
+                />
+
+                <figcaption>
+                  Relative positional encodings as proposed by Shaw et al., 2019
+                </figcaption>
+              </figure>
+              <div class="paper-actions text-end">
+                <a
+                  class="btn btn-danger"
+                  href="https://aclanthology.org/2019.iwslt-1.20/"
+                >
+                  <i class="fa-solid fa-file-lines"></i> Paper
+                </a>
+              </div>
             </div>
           </div>
         </article>
