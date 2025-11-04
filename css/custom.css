@@ -398,6 +398,11 @@ section.research {
     padding: 1em 0;
 }
 
+section.news {
+    padding: 1em 0;
+    background-color: var(--md-blue-50);
+}
+
 .research article {
     margin-bottom: 1.5em;
 }
